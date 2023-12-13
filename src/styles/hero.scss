@@ -1,0 +1,66 @@
+@import 'app.scss';
+.hero{
+    height: calc(100vh - 100px);
+    overflow: hidden;
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    position: relative;
+    .hero__wrapper
+    {
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+
+        .hero__textContainer{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            h2{
+                font-size: 30px;
+                font-weight: 300;
+                letter-spacing: 8px;
+            }
+            h1{
+                font-size: 88px;
+            }
+            .hero__buttons{
+                button{
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    background-color: transparent;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+            }
+            .hero__scroll{
+                width: 50px;
+            }
+        }
+    }
+    .hero__imageContainer{
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .hero__slidingText{
+        position: absolute;
+        bottom: -120px;
+        color: #ffffff09;
+        font-size: 50vh;
+        white-space: nowrap;
+        width: 50%;
+        font-weight: bold;
+    }
+}
